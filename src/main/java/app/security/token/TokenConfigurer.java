@@ -1,4 +1,4 @@
-package todoapp.app.security.token;
+package app.security.token;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;

@@ -1,4 +1,4 @@
-package todoapp.app.security.token;
+package app.security.token;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package todoapp.app.beans;
+package app.beans;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -9,9 +9,9 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import app.entity.User;
 import lombok.Getter;
 import lombok.Setter;
-import todoapp.app.entity.User;
 
 @Getter
 @Setter
@@ -75,7 +75,7 @@ public class CustomUserDetails implements UserDetails {
 		
 		List<GrantedAuthority> tmpAuthority = new ArrayList<GrantedAuthority>();
 		
-		tmpAuthority.add(new SimpleGrantedAuthority("ADMIN"));
+		tmpAuthority.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
 		
 		return new CustomUserDetails(user.getId(), user.getFirstName(), user.getLastName(), user.getUserName(), user.getPassword(), tmpAuthority);
 	}

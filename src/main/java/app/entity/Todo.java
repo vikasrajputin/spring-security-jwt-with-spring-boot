@@ -1,8 +1,11 @@
-package todoapp.app.beans;
+package app.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,14 +13,19 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class TodoBean {
+@Table(name="todo")
+public class Todo {
 
 	@Id
-	private String id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Integer id;
+	
 	@Column
 	private String title;
+	
 	@Column
 	private String description;
+	
 	@Column
 	private String status;
 	

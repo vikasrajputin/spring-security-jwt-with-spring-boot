@@ -1,4 +1,4 @@
-package todoapp.app.beans;
+package app.beans;
 
 public class AuthenticationBean {
 	

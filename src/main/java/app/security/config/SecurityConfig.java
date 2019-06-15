@@ -1,4 +1,4 @@
-package todoapp.app.security.config;
+package app.security.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -9,8 +9,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
 
-import todoapp.app.security.token.TokenConfigurer;
-import todoapp.app.security.token.TokenProvider;
+import app.security.token.TokenConfigurer;
+import app.security.token.TokenProvider;
 
 @Configuration
 public class SecurityConfig extends WebSecurityConfigurerAdapter {

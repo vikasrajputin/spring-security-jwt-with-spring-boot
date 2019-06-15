@@ -1,4 +1,4 @@
-package todoapp.app;
+package app;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -6,10 +6,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import app.beans.CustomUserDetails;
+import app.dao.UserRepository;
+import app.entity.User;
 import io.jsonwebtoken.lang.Collections;
-import todoapp.app.beans.CustomUserDetails;
-import todoapp.app.dao.UserRepository;
-import todoapp.app.entity.User;
 
 @Service("userService")
 public class UserService implements UserDetailsService {

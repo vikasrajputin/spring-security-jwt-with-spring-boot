@@ -1,8 +1,8 @@
-package todoapp.app.dao;
+package app.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import todoapp.app.entity.User;
+import app.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 	
