@@ -12,6 +12,7 @@ import app.entity.User;
 import io.jsonwebtoken.lang.Collections;
 
 @Service("userService")
+
 public class UserService implements UserDetailsService {
 
 	private final UserRepository userRepository;
